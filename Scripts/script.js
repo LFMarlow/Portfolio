@@ -26,13 +26,15 @@ function animateSkillCircles() {
     const rect = circle.parentElement.getBoundingClientRect();
     const windowHeight = window.innerHeight;
     if (rect.top < windowHeight - 50) {
-      // Récupérer la valeur cible dans un attribut data-percent (ex. data-percent="90")
       let percent = 0;
-      if (circle.classList.contains('html')) percent = 90;
-      if (circle.classList.contains('css')) percent = 85;
-      if (circle.classList.contains('js')) percent = 75;
-      if (circle.classList.contains('react')) percent = 70;
-      if (circle.classList.contains('node')) percent = 65;
+      if (circle.classList.contains('html')) percent = 80;
+      if (circle.classList.contains('css')) percent = 77;
+      if (circle.classList.contains('js')) percent = 65;
+      if (circle.classList.contains('php')) percent = 75;
+      if (circle.classList.contains('csharp')) percent = 85;
+      if (circle.classList.contains('aspnet')) percent = 85;
+      if (circle.classList.contains('react')) percent = 50;
+      if (circle.classList.contains('java')) percent = 50;
       const dashoffset = 283 - (283 * percent) / 100;
       circle.style.strokeDashoffset = dashoffset;
     }

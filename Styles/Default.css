@@ -578,8 +578,12 @@ input:checked + .toggle-label .ball::before {
 .skill-fg.html  { stroke: #e34f26; }
 .skill-fg.css   { stroke: #2965f1; }
 .skill-fg.js    { stroke: #f0db4f; }
-.skill-fg.react { stroke: #61dafb; }
-.skill-fg.node  { stroke: #8cc84b; }
+.skill-fg.php   { stroke: #8cc84b; }
+.skill-fg.csharp{ stroke: #8a64a7; }
+.skill-fg.aspnet{ stroke: #af4dff; }
+.skill-fg.react { stroke: #c6eb71; }
+.skill-fg.java  { stroke: #d371eb; }
+
 
 /* =====================
    SECTION CONTACT
