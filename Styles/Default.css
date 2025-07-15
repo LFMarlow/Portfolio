@@ -89,6 +89,14 @@ body.dark .skill-bg {
   stroke: var(--dark-border);
 }
 
+body.dark .about-text {
+  color: white;
+}
+
+body.dark h4 {
+  color: white;
+}
+
 body.dark .skill-fg.html { stroke: #e34f26; }
 body.dark .skill-fg.css { stroke: #2965f1; }
 body.dark .skill-fg.js { stroke: #f0db4f; }
