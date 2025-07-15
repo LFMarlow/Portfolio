@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet"/>+
 
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
   <!-- MODE CLAR-OBSCUR (toggle) -->
@@ -85,7 +87,7 @@
       <!-- Exemple de carte de projet (répéter/adapter) -->
       <div class="project-card reveal-up delay-1" data-tilt>
         <div class="card-image">
-          <img src="/Assets/images/quai_antique.png" alt="Projet 1" />
+          <img src="/Assets/images/quai_antique.png" alt="Projet Quai_Antique" />
         </div>
         <div class="card-overlay">
           <h3>Projet Quai Antique</h3>
@@ -98,12 +100,12 @@
 
       <div class="project-card reveal-up delay-2" data-tilt>
         <div class="card-image">
-          <img src="projet2-screenshot.jpg" alt="Projet 2" />
+          <img src="Assets/images/gamestore.png" alt="Projet Gamestore" />
         </div>
         <div class="card-overlay">
-          <h3>Projet 2</h3>
-          <p>Application SPA en React + GraphQL avec dark mode.</p>
-          <a href="https://lien-vers-projet2.com" target="_blank" class="card-btn">
+          <h3>Projet Gamestore</h3>
+          <p>Application web de vente en ASP.NET avec MySQL et MongoDB.</p>
+          <a href="https://gamestore-ecf.azurewebsites.net" target="_blank" class="card-btn">
             Voir en live
           </a>
         </div>
@@ -111,11 +113,11 @@
 
       <div class="project-card reveal-up delay-3" data-tilt>
         <div class="card-image">
-          <img src="projet3-screenshot.jpg" alt="Projet 3" />
+          <img src="Assets/images/portfolio.png" alt="Projet Portfolio" />
         </div>
         <div class="card-overlay">
-          <h3>Projet 3</h3>
-          <p>Portfolio statique en Gatsby avec animations Lottie.</p>
+          <h3>Projet Portfolio</h3>
+          <p>Portfolio statique.</p>
           <a href="https://lien-vers-projet3.com" target="_blank" class="card-btn">
             Voir en live
           </a>
@@ -193,7 +195,7 @@
   <section id="contact" class="contact container">
     <h2 class="section-title reveal-up">Contact</h2>
     <div class="contact-wrapper">
-      <form action="#" class="contact-form reveal-up delay-1">
+      <form id="contact-form" class="contact-form reveal-up delay-1">
         <div class="input-group">
           <input type="text" id="name" name="name" required />
           <label for="name">Votre nom</label>

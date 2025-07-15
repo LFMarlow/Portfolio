@@ -1,6 +1,7 @@
-// ================================
+// ====================================
 // 1. RÉVÉLATION DES ÉLÉMENTS AU SCROLL
-// ================================
+// ====================================
+
 const revealElements = document.querySelectorAll('.reveal-up');
 
 function revealOnScroll() {
@@ -19,6 +20,7 @@ window.addEventListener('load', revealOnScroll);
 // ================================
 // 2. CERCLES DE COMPÉTENCES (SVG)
 // ================================
+
 const skillCircles = document.querySelectorAll('.skill-fg');
 
 function animateSkillCircles() {
@@ -44,9 +46,10 @@ function animateSkillCircles() {
 window.addEventListener('scroll', animateSkillCircles);
 window.addEventListener('load', animateSkillCircles);
 
-// ================================
+// ==========================
 // 3. MENU MOBILE (HAMBURGER)
-// ================================
+// ==========================
+
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('nav-list');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -69,6 +72,7 @@ navLinks.forEach(link => {
 // ================================
 // 4. EFFET 3D TILT SUR LES CARTES
 // ================================
+
 // On ajoute un écouteur mousemove à chaque carte contenant data-tilt
 const projectCards = document.querySelectorAll('[data-tilt]');
 
@@ -88,9 +92,27 @@ projectCards.forEach(card => {
   });
 });
 
-// ================================
-// 5. MODE CLAIR / SOMBRE
-// ================================
+// ==========
+// 5. CONTACT
+// ==========
+
+emailjs.init("kK092fyJFTs4SjL3H");
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  emailjs.sendForm('service_96b9fs5', 'template_iq0h46f', this)
+    .then(() => {
+      alert('Message envoyé ! Merci !');
+      this.reset();
+    }, (err) => {
+      console.error('Erreur :', err);
+      alert('Oups… une erreur est survenue.');
+    });
+});
+
+// ======================
+// 6. MODE CLAIR / OBSCUR
+// ======================
+
 const toggleCheckbox = document.getElementById('toggle-checkbox');
 toggleCheckbox.addEventListener('change', () => {
   if (toggleCheckbox.checked) {
